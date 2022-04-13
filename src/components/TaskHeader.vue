@@ -26,11 +26,9 @@ export default {
   computed: {
       isHomePage(){
         if(this.$route.path === '/'){
-          console.log('TaskHeader computed() -1')
         return true
         }
         else {
-          console.log('TaskHeader computed() -2')
           return false
         }
       },

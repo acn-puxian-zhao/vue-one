@@ -78,6 +78,14 @@ export default {
     async updateTask(task) {
       console.log("updateTask");
 
+      this.$router.push({
+        name:'Update',
+        params: {
+          ...task
+        },
+        })
+      return
+
       const taskToUpdate = await this.fetchTask(task.id);
       console.log(taskToUpdate);
       const updTask = {

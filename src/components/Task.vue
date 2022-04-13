@@ -7,7 +7,8 @@
     <h3>
       <i @click="this.$emit('delete-task')" class="fas fa-times">Delete</i>
     </h3>
-  <i @click="this.$emit('update-task')" class="fas1 fa-times">Update</i>
+  <i @click="this.$emit('update-task')" class="fas1 fa-times noinline">Update</i>
+  <i  class="fas1 noinline">Update (popup) </i>
   </div>
 </template>
 
@@ -24,6 +25,10 @@ export default {
 </script>
 
 <style scope>
+
+.noinline {
+  display:block
+}
 .fas {
   color: red;
 }
