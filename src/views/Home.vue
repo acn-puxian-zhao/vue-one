@@ -85,7 +85,7 @@ export default {
         },
         })
       return
-
+/*
       const taskToUpdate = await this.fetchTask(task.id);
       console.log(taskToUpdate);
       const updTask = {
@@ -114,6 +114,8 @@ export default {
       );
       console.log('33333333333');
 
+ */
+
     },
 
     async fechTasks() {
@@ -130,7 +132,7 @@ export default {
     },
   },
   async created() {
-    console.log("home view " + this.showAddTaskForm);
+    console.log("home view created ");
     this.tasks = await this.fechTasks();
   },
 };

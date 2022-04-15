@@ -1,5 +1,8 @@
 <template>
-  <router-link to="/"> GO BACK </router-link>
+  <div>
+    <h2> This is a test project. for studying only.</h2>
+  </div>
+  <router-link to="/"> Home </router-link>
 </template>
 
 <script>
